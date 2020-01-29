@@ -1,0 +1,62 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-01-21 17:29:37
+ * @LastEditTime : 2020-01-27 18:59:56
+ * @LastEditors  : Please set LastEditors
+ * @Description: game element & structure
+ * @FilePath: \front coding\game_2048\2048.html
+ -->
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" 
+                content="
+                    width = device-width,height = device-height,
+                    initial-scale = 1.0,
+                    minimum-scale = 1.0,maximum-scale = 1.0,
+                    user-scalable = no" 
+        /> 
+        <title>jjz的2048</title>
+        <link rel="stylesheet" type="text/css" href="2048.css">
+    </head>
+    <body>
+        <!-- 头部：headerb标签页眉信息呈现 -->
+        <header>
+            <h1>jjz的盗版2048</h1>
+            <!-- 链接到js函数 -->
+            <a href="javascript:newGame();" id="newgame">New Game</a>
+            <!-- 不断变化的内容用span标签个包裹 -->
+            <p id="score">Score：<span>0</span></p> 
+        </header>
+        <!--游戏主体部分，4*4的棋盘格 -->
+        <div id="grid_wrap">
+            <div class="grid_cell" id="cell_00"></div>
+            <div class="grid_cell" id="cell_01"></div>
+            <div class="grid_cell" id="cell_02"></div>
+            <div class="grid_cell" id="cell_03"></div>
+
+            <div class="grid_cell" id="cell_10"></div>
+            <div class="grid_cell" id="cell_11"></div>
+            <div class="grid_cell" id="cell_12"></div>
+            <div class="grid_cell" id="cell_13"></div>
+
+            <div class="grid_cell" id="cell_20"></div>
+            <div class="grid_cell" id="cell_21"></div>
+            <div class="grid_cell" id="cell_22"></div>
+            <div class="grid_cell" id="cell_23"></div>
+
+            <div class="grid_cell" id="cell_30"></div>
+            <div class="grid_cell" id="cell_31"></div>
+            <div class="grid_cell" id="cell_32"></div>
+            <div class="grid_cell" id="cell_33"></div>
+        </div>        
+        
+
+        <!-- jquery库关联 -->
+        <script type="text/javascript" src="http://libs.baidu.com/jquery/1.9.0/jquery.min.js"></script>
+        <script type="text/javascript" src="support_2048.js"></script>
+        <script type="text/javascript" src="show_2048.js"></script>
+        <script type="text/javascript" src="main_2048.js"></script>
+
+    </body>
+</html>
